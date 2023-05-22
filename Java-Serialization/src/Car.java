@@ -38,6 +38,9 @@ public class Car extends Vehicle implements Externalizable {
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        setColor((String) in.readObject());
+        setGear(in.readInt());
+        setSpeed(in.readDouble());
 
     }
 
