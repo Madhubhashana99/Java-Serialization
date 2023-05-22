@@ -6,9 +6,9 @@ public class Serialization {
     FileOutputStream fos;
     ObjectOutputStream oos;
 
-    public void serializeCat(Car c){
+    public void serializeCar(Car c){
         try{
-            fos = new FileOutputStream("D:\\My projects\\Java-Serialization\\Java-Serialization\\src\\data\\text.txt");
+            fos = new FileOutputStream("D:\\My projects\\Java-Serialization\\Java-Serialization\\test\\text.txt");
             oos = new ObjectOutputStream(fos);
             oos.writeObject(c);
             oos.flush();
